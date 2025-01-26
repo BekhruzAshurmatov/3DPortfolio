@@ -18,10 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from home.views import index
 from course import views
+from home.views import about
+from home.views import contact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', index),
     path('', index),
-    path('course/', views.index)
+    path('course/', views.index),
+    path('about/', about),
+    path('contact/', contact),
 ]
