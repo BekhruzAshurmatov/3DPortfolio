@@ -6,6 +6,10 @@ from course.models import Subject
 class CourseAdmin(admin.ModelAdmin):
     list_display = ['title', 'slug']
 
+class SubjectAdmin(admin.ModelAdmin):
+    list_display = ['title', 'course', 'slug']
+    list_filter = ['course']
+
 
 admin.site.register(Course, CourseAdmin)
-admin.site.register(Subject)
+admin.site.register(Subject, SubjectAdmin)

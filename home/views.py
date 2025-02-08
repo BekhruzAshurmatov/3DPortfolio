@@ -8,8 +8,8 @@ def index(request):
 
 def about(request):
 
-    return HttpResponse('About us')
+    return render(request, 'About us')
 
 def contact(request):
 
-    return HttpResponse('Contacts page')
+    return render(request,'Contact us')
