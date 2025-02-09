@@ -14,7 +14,7 @@ class Setting(models.Model):
     smtp_port = models.CharField(max_length=255)
     youtube = models.CharField(max_length=255)
     instagram = models.CharField(max_length=255)
-    facebook = models.CharField(max_length=255)
+    facebook = models.CharField(max_length=100)
     icon = models.ImageField(upload_to='images/')
     aboutus = models.TextField(max_length=255)
     contact = models.TextField(max_length=255)
